@@ -79,7 +79,7 @@ set(aapt2_header
         ${CMAKE_SOURCE_DIR}/frameworks/base/tools/aapt2
         )
 
-set(global_libcxx_cxxflags "-nostdinc++ -DLIBCXX_BUILDING_LIBCXXABI -D_LIBCPP_BUILDING_LIBRARY")
+set(global_libcxx_cxxflags "-Wno-macro-redefined -nostdinc++ -DLIBCXX_BUILDING_LIBCXXABI -D_LIBCPP_BUILDING_LIBRARY")
 
 
 MESSAGE(STATUS "当前CMAKE_SOURCE_DIR目录: ${CMAKE_SOURCE_DIR}")
