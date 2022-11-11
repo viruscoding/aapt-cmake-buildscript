@@ -31,7 +31,7 @@ set(aapt_static_sources
         )
 
 set(aapt_static_cflag
-        "-Werror -Wall -Wno-format-y2k -DSTATIC_ANDROIDFW_FOR_TOOLS"
+        "-Werror -Wall -Wno-format-y2k -DSTATIC_ANDROIDFW_FOR_TOOLS -Wno-unused-but-set-variable"
         )
 
 if (WIN32)
